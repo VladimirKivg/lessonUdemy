@@ -1,11 +1,12 @@
 package com.vova.spring.mvc.hibernate_aop.controller;
 
-import com.vova.spring.mvc.hibernate_aop.dao.EmployeeDao;
+
 import com.vova.spring.mvc.hibernate_aop.entity.Employee;
 import com.vova.spring.mvc.hibernate_aop.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
@@ -28,4 +29,22 @@ public class MyController {
         model.addAttribute("allEmps",allEmployees);
         return "all-employees";
     }
+
+    @RequestMapping("/addNewEmployee")
+    public String addNewEmployee(Model model){
+        Employee employee =new Employee();
+        model.addAttribute("employee",employee);
+return "employee-info";
+    }
+
+    @RequestMapping("saveEmployee")
+    public String saveEmployee(@ModelAttribute("employee") Employee employee){
+
+        Employee employee1 = new Employee("vova","vova","it ingenering",1700);
+
+employeeService.saveEmployee(employee);
+
+        return "redirect:/";
+    }
+
 }
