@@ -6,8 +6,8 @@ import java.util.List;
 
 
 public interface EmployeeDao {
-List<Employee> getAllEmployees();
+    List<Employee> getAllEmployees();
 
-   public void saveEmployee(Employee employee);
+    public void saveEmployee(Employee employee);
 
 }
