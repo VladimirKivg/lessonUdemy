@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Repository
-public class EmployeeDaoImpl implements EmployeeDao{
+public class EmployeeDaoImpl implements EmployeeDao {
 
     @Autowired
     private SessionFactory sessionFactory;
@@ -19,8 +19,8 @@ public class EmployeeDaoImpl implements EmployeeDao{
 //    @Transactional
     public List<Employee> getAllEmployees() {
 
-        Session session=sessionFactory.getCurrentSession();
-        List<Employee> allEmployees=session.createQuery("from Employee",Employee.class)
+        Session session = sessionFactory.getCurrentSession();
+        List<Employee> allEmployees = session.createQuery("from Employee", Employee.class)
                 .getResultList();
 
 
@@ -29,7 +29,7 @@ public class EmployeeDaoImpl implements EmployeeDao{
 
     @Override
     public void saveEmployee(Employee employee) {
-        Session session=sessionFactory.getCurrentSession();
+        Session session = sessionFactory.getCurrentSession();
         session.save(employee);
 
     }
