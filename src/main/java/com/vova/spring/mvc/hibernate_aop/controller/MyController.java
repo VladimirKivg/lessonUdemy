@@ -22,27 +22,27 @@ public class MyController {
     private EmployeeService employeeService;
 
     @RequestMapping("/")
-    public String shoeAllEmployees(Model model){
+    public String shoeAllEmployees(Model model) {
 //        List<Employee> allEmployees = employeeDao.getAllEmployees();
 
         List<Employee> allEmployees = employeeService.getAllEmployees();
-        model.addAttribute("allEmps",allEmployees);
+        model.addAttribute("allEmps", allEmployees);
         return "all-employees";
     }
 
     @RequestMapping("/addNewEmployee")
-    public String addNewEmployee(Model model){
-        Employee employee =new Employee();
-        model.addAttribute("employee",employee);
-return "employee-info";
+    public String addNewEmployee(Model model) {
+        Employee employee = new Employee();
+        model.addAttribute("employee", employee);
+        return "employee-info";
     }
 
     @RequestMapping("saveEmployee")
-    public String saveEmployee(@ModelAttribute("employee") Employee employee){
+    public String saveEmployee(@ModelAttribute("employee") Employee employee) {
 
-        Employee employee1 = new Employee("vova","vova","it ingenering",1700);
+        Employee employee1 = new Employee("vova", "vova", "it ingenering", 1700);
 
-employeeService.saveEmployee(employee);
+        employeeService.saveEmployee(employee);
 
         return "redirect:/";
     }
