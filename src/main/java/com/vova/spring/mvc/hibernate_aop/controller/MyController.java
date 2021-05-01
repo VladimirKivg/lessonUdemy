@@ -47,4 +47,9 @@ public class MyController {
         return "redirect:/";
     }
 
+    public String updateEmployee(){
+
+        return null;
+    }
+
 }
