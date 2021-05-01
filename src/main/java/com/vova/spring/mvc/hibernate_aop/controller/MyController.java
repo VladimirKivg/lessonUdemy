@@ -40,7 +40,7 @@ public class MyController {
     @RequestMapping("saveEmployee")
     public String saveEmployee(@ModelAttribute("employee") Employee employee) {
 
- //       Employee employee1 = new Employee("vova",  "vova",  "it ingenering", 1700);
+ //       Employee employee1 = new Employee("vova", "vova", "it ingenering", 1700);
 
         employeeService.saveEmployee(employee);
 
