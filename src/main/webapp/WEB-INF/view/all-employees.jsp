@@ -10,6 +10,7 @@
         <th>Surname</th>
         <th>Department</th>
         <th>Salary</th>
+        <th>Operations</th>
     </tr>
     <c:forEach var="emp" items="${allEmps}">
         <tr>
