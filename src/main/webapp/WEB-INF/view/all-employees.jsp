@@ -31,7 +31,7 @@
                 <input type="button" value="update"
                 onclick="window.location.href = '${updateButton}'"/>
 
-                <input type="button" value="update"
+                <input type="button" value="delete"
                        onclick="window.location.href = '${updateButton}'"/>
             </td>
 
