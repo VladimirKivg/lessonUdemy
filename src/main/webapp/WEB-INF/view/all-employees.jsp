@@ -13,9 +13,15 @@
         <th>Operations</th>
     </tr>
     <c:forEach var="emp" items="${allEmps}">
+
         <c:url var="updateButton" value="/updateInfo">
             <c:param name="empId" value="${emp.id}"/>
         </c:url>
+
+        <c:url var="deletedButton" value="deletedEmployee">
+            <c:param name="empId" value="${emp.id}"/>
+        </c:url>
+
         <tr>
             <td>${emp.name}</td>
             <td>${emp.surname}</td>
