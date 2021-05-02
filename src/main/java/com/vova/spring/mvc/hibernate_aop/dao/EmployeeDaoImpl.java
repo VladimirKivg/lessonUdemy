@@ -31,6 +31,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
     @Transactional
     public void saveEmployee(Employee employee) {
         Session session = sessionFactory.getCurrentSession();
+        employee.getId();
       session.update(employee);
     }
 
