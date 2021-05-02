@@ -14,7 +14,7 @@
     </tr>
     <c:forEach var="emp" items="${allEmps}">
         <c:url var="updateButton" value="/updateInfo">
-            <c:param name="empId" value="${emp.id}"></c:param>
+            <c:param name="empId" value="${emp.id}"/>
         </c:url>
         <tr>
             <td>${emp.name}</td>
