@@ -32,7 +32,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
     public void saveEmployee(Employee employee) {
         Session session = sessionFactory.getCurrentSession();
         employee.getId();
-      session.update(employee);
+      session.saveOrUpdate(employee);
     }
 
     @Override
