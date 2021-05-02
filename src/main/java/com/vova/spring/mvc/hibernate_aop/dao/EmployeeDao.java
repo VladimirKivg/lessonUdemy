@@ -10,4 +10,5 @@ public interface EmployeeDao {
 
     public void saveEmployee(Employee employee);
 
+    public Employee getEmployees(int id);
 }
