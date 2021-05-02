@@ -30,6 +30,9 @@
             <td>
                 <input type="button" value="update"
                 onclick="window.location.href = '${updateButton}'"/>
+
+                <input type="button" value="update"
+                       onclick="window.location.href = '${updateButton}'"/>
             </td>
 
         </tr>
