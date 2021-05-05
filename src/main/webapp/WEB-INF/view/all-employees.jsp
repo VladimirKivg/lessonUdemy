@@ -18,7 +18,7 @@
             <c:param name="empId" value="${emp.id}"/>
         </c:url>
 
-        <c:url var="deletedButton" value="deletedEmployee">
+        <c:url var="deleteButton" value="deleteEmployee">
             <c:param name="empId" value="${emp.id}"/>
         </c:url>
 
@@ -32,7 +32,7 @@
                 onclick="window.location.href = '${updateButton}'"/>
 
                 <input type="button" value="delete"
-                       onclick="window.location.href = '${updateButton}'"/>
+                       onclick="window.location.href = '${deleteButton}'"/>
             </td>
 
         </tr>
