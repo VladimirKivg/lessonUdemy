@@ -54,6 +54,12 @@ public class MyController {
         model.addAttribute("employee",employee);
 
         return "employee-info";
-    } // 2я минута 74й урок
+    }
+
+    @RequestMapping("/deleteEmployee")
+    public String deleteEmployee(){
+
+      return null;
+    }
 
 }
