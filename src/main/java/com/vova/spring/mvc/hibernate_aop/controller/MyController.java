@@ -59,7 +59,7 @@ public class MyController {
     @RequestMapping("/deleteEmployee")
     public String deleteEmployee(@RequestParam("empId") int id){
 
-      return null;
+      return "redirect:/";
     }
 
 }
