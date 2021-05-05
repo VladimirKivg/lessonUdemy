@@ -54,6 +54,6 @@ public class MyController {
         model.addAttribute("employee",employee);
 
         return "employee-info";
-    }
+    } // 2я минута 74й урок
 
 }
