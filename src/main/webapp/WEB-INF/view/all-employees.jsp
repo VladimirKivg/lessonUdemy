@@ -18,7 +18,7 @@
             <c:param name="empId" value="${emp.id}"/>
         </c:url>
 
-        <c:url var="deleteButton" value="deleteEmployee">
+        <c:url var="deleteButton" value="/deleteEmployee">
             <c:param name="empId" value="${emp.id}"/>
         </c:url>
 
