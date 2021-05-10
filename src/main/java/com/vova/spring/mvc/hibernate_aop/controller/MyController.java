@@ -41,7 +41,7 @@ public class MyController {
     @RequestMapping("saveEmployee")
     public String saveEmployee(@ModelAttribute("employee") Employee employee) {
 
- //       Employee employee1 = new Employee("vova",  "vova", "it ingenering", 1700);
+        //       Employee employee1 = new Employee("vova",  "vova", "it ingenering", 1700);
 
         employeeService.saveEmployee(employee);
 
@@ -49,19 +49,19 @@ public class MyController {
     }
 
     @RequestMapping("/updateInfo")
-    public String updateEmployee(@RequestParam("empId")int id,Model model){
+    public String updateEmployee(@RequestParam("empId") int id, Model model) {
         Employee employee = employeeService.getEmployee(id);
-        model.addAttribute("employee",employee);
+        model.addAttribute("employee", employee);
 
         return "employee-info";
     }
 
     @RequestMapping("/deleteEmployee")
-    public String deleteEmployee(@RequestParam("empId") int id){
+    public String deleteEmployee(@RequestParam("empId") int id) {
 
         employeeService.deleteEmployee(id);
 
-      return "redirect:/";
+        return "redirect:/";
     }
 
 }
