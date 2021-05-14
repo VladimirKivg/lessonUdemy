@@ -10,6 +10,7 @@ public class MyLoggingAspect {
     public Object aroundAllRepositoryMethodsAdvice (ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         MethodSignature methodSignature= (MethodSignature) proceedingJoinPoint.getSignature();
 String methodMame =methodSignature.getName();
+        System.out.println("begin OF "+methodMame);
         return null;
     }
 
