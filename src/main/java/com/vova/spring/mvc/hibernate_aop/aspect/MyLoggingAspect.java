@@ -4,7 +4,7 @@ import org.aspectj.lang.annotation.Around;
 
 public class MyLoggingAspect {
 
-    @Around("execution (* com.vova.spring.mvc.hibernate_aop)")
+    @Around("execution (* com.vova.spring.mvc.hibernate_aop.dao.*.*(..))")
     public Object aroundAllRepositoryMethodsAdvice (){
 
         return null;
