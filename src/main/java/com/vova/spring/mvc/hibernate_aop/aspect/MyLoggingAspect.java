@@ -2,8 +2,12 @@ package com.vova.spring.mvc.hibernate_aop.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.reflect.MethodSignature;
+import org.springframework.stereotype.Component;
 
+@Component
+@Aspect
 public class MyLoggingAspect {
 
     @Around("execution (* com.vova.spring.mvc.hibernate_aop.dao.*.*(..))")
