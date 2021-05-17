@@ -8,7 +8,7 @@ import org. springframework.stereotype.Component;
 
 @Component
 @Aspect
-public class   MyLoggingAspect {
+public class     MyLoggingAspect {
 
     @Around("execution   (* com.vova.spring.mvc.hibernate_aop.dao.*.*(..))")
     public Object   aroundAllRepositoryMethodsAdvice(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
@@ -18,7 +18,7 @@ public class   MyLoggingAspect {
 
         Object targetMethodResult = proceedingJoinPoint.proceed();
 
-        System.out.println("End of" + methodMame);
+        System.out.println("End of" +  methodMame);
 
         return targetMethodResult;
     }
