@@ -18,7 +18,7 @@ public   class     MyLoggingAspect {
 
         Object targetMethodResult = proceedingJoinPoint.proceed();
 
-        System.out.println("End of" +  methodMame);
+        System.out.println ("End of" +  methodMame);
 
         return targetMethodResult;
     }
