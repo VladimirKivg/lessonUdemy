@@ -3,7 +3,7 @@ package com.vova.spring.mvc.hibernate_aop.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name     = "employees")
+@Table(name      = "employees")
 public class Employee {
 
     @Id
