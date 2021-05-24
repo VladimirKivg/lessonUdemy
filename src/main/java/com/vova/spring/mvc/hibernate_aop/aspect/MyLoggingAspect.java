@@ -10,7 +10,7 @@ import org. springframework.stereotype.Component;
 @Aspect
 public   class              MyLoggingAspect {
 
-    @Around("execution           (* com.vova.spring.mvc.hibernate_aop.dao.*.*(..))")
+    @Around("execution            (* com.vova.spring.mvc.hibernate_aop.dao.*.*(..))")
     public Object   aroundAllRepositoryMethodsAdvice(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         MethodSignature  methodSignature = (MethodSignature) proceedingJoinPoint.getSignature();
         String   methodMame =  methodSignature.getName();
