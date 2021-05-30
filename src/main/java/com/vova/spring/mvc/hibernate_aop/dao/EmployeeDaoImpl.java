@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Repository
-public class             EmployeeDaoImpl implements EmployeeDao {
+public class              EmployeeDaoImpl implements EmployeeDao {
 
     @Autowired
     private SessionFactory sessionFactory;
