@@ -3,11 +3,11 @@ package com.vova.spring.mvc.hibernate_aop.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name        = "employees")
-public class                         Employee {
+@Table(name = "employees")
+public class Employee {
 
     @Id
-    @GeneratedValue(strategy =   GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
 
